@@ -1,6 +1,6 @@
 # democart_automation
 ## Projeto que visa automatizar o processo de navegação de um e-commerce (busca do produto, inclusão no carrinho)
-### link: http://demo.cs-cart.com/
+### e-commerce: http://demo.cs-cart.com/
 
 #### Stacks:
 1. C# (com NUnit)
