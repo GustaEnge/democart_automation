@@ -9,7 +9,7 @@ namespace democart_automation.Pages
 {
     class HomePage
     {
-        string url = "http://demo.cs-cart.com";
+        string url = "http://demo.alt-team.com/4_demo3/index.php";
         private IWebDriver driver;
         private WebDriverWait wait;
         Int32 timeout = 10000;
