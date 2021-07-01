@@ -9,7 +9,7 @@ namespace democart_automation.Pages
 {
     class HomePage
     {
-        string url = "http://demo.cs-cart.com";
+        string url = "http://demo.alt-team.com/4_demo3/index.php";
         private IWebDriver driver;
         private WebDriverWait wait;
         Int32 timeout = 10000;
@@ -42,7 +42,13 @@ namespace democart_automation.Pages
 
         public ResultPage search_product(string term)
         {
-            hide_panel.Click();
+            //IWebElement hide_panel = wait.Until(e => e.FindElement(By.Id("bp_off_bottom_panel")));
+            //if (hide_panel != null)
+            //{
+            //    hide_panel.Click();
+            //}
+            
+
             elem_search.SendKeys(term);
             elem_search.Submit();
             return new ResultPage(driver);

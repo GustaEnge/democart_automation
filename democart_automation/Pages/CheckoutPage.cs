@@ -106,6 +106,7 @@ namespace democart_automation.Pages
             IWebElement checkbox_terms = wait.Until(e => e.FindElement(By.Name("accept_terms")));
 
             actions.MoveToElement(checkbox_terms);
+        
             phone_number.SendKeys(phone);
             checkbox_terms.Click();
 

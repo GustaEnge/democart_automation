@@ -43,7 +43,8 @@ namespace democart_automation.Hooks
             extent = new ExtentReports();
             extent.AttachReporter(htmlReporter);
 
-            path_chrome = projectPath.ToString();
+            //path_chrome = projectPath.ToString();
+            path_chrome = @"C:\";
             //path_chrome = Environment.GetEnvironmentVariable("webdriver.chrome.driver");
 
         }
@@ -70,10 +71,11 @@ namespace democart_automation.Hooks
         {
             ChromeOptions options = new ChromeOptions();
             options.AddArgument("no-sandbox");
+            options.AddArgument("--lang = pt");
             //ChromeDriver driver = new ChromeDriver(ChromeDriverService.CreateDefaultService(), options, TimeSpan.FromMinutes(3));
             //driver.Manage().Timeouts().PageLoad.Add(System.TimeSpan.FromSeconds(30));
 
-            driver = new ChromeDriver(options);
+            driver = new ChromeDriver(path_chrome);
 
 
             //driver = new ChromeDriver();

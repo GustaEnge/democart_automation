@@ -16,9 +16,9 @@
     <PackageReference Include="Selenium.Support" Version="3.14.0" />
     <PackageReference Include="Selenium.WebDriver" Version="3.14.0" />
     <PackageReference Include="Selenium.WebDriverBackedSelenium" Version="3.14.0" />
-    <PackageReference Include="Specflow" Version="3.7.38" />
-    <PackageReference Include="Specflow.NUnit" Version="3.7.38" />
-    <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.7.38" />
+    <PackageReference Include="Specflow" Version="3.9.8" />
+    <PackageReference Include="Specflow.NUnit" Version="3.9.8" />
+    <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.9.8" />
   </ItemGroup>
 
 </Project>

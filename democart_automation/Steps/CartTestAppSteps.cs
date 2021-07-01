@@ -48,7 +48,9 @@ namespace democart_automation.Steps
         [When(@"The page loads the searched product: (.*)")]
         public void WHENLoadsThePageWithSearchedProduct(string p0)
         {
-            string expected_title = "Resultados da pesquisa";
+            //string expected_title = "Resultados da pesquisa";
+            string expected_title = "Search results";
+            //mudar linguagem do site acessado, erro ao comparar title
 
             String result_pageTitle = home_page.getPageTitle();
             result_page.load_complete();
@@ -79,7 +81,8 @@ namespace democart_automation.Steps
         [When(@"I check this (.*) on cart as well as total price")]
         public void WhenCheckThisOnCartAsWellAsTotalPrice(string p0)
         {
-            string expected_title = "Conteúdo do carrinho";
+            //string expected_title = "Conteúdo do carrinho";
+            string expected_title = "Cart contents";
             cart_page.load_complete();
             Assert.That(cart_page.getPageTitle() == expected_title);
             Assert.That(cart_page.getTotal() == price_product);
